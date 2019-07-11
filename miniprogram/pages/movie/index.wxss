@@ -1,6 +1,7 @@
 /* pages/movie/index.wxss */
 page {
   padding:20rpx;
+  box-sizing: border-box;
 }
 .movie{
   display: flex;
