@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/movie/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "动漫简介",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#E54847",
+    "list": [
+      {
+        "pagePath": "pages/movie/index",
+        "text": "动漫",
+        "iconPath": "images/film.png",
+        "selectedIconPath": "images/film-actived.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
