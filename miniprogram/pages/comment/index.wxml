@@ -1,0 +1,26 @@
+<view class=''>
+  <view class='detail-container' style='background: url("https://cdn.it120.cc/apifactory/2019/07/01/2e3e2a3f-9be0-48b0-a19e-be17b14509a4.jpg_m") no-repeat  top/cover'></view>
+  <view class='detail-mask'></view>
+  <view class='detail-info'>
+    <image src="{{detail.thumbnail}}" class='detail-img'></image>
+    <view class='detail'>
+      <view class='detail-nm'>{{detail.name}}</view>
+      <view>{{detail.name}}</view>
+      <view class='detail.sc'>{{detail.average}}分</view>
+      <view>{{detail.releaseTime}}</view>
+      <view>导演：{{detail.auth}}</view>
+    </view>
+  </view>
+  <view class='desc'>{{detail.description}}</view>
+  <!-- 评价 -->
+  <view class="comment-container">
+    <van-field value="{{ content }}" placeholder="写一些评价吧" bind:change="onContentChange" />
+    <van-rate value="{{ score }}" bind:change="onScoreChange" />
+    <van-button type="warning" bindtap="uploadImg">上传图片</van-button>
+    <view>
+      <image class="comment-img" src="{{item}}" wx:for="{{images}}" wx:key="{{index}}"></image>
+    </view>
+    <van-button size="large" type="danger" bindtap="submit">提交评价</van-button>
+  </view>
+
+</view>

@@ -8,7 +8,12 @@ Page({
     pageSize: 4,
     movieList: []
   },
-  getMovieList: function() {
+  gotoComment:function(event){ /* 评论 */
+    wx.navigateTo({
+      url: `../comment/index?movieid=${event.target.dataset.movieid}`,
+    })
+  },
+  getMovieList: function() { /* 获取动漫列表 */
     wx.showLoading({
       title: '加载中',
     })

@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -60,6 +60,14 @@
 					"id": -1,
 					"name": "pages/mine/index",
 					"pathName": "pages/mine/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/comment/index",
+					"pathName": "pages/comment/index",
+					"query": "movieid=e78e488e-1c2c-4ad5-a6a4-36761792bd98",
 					"scene": null
 				}
 			]
